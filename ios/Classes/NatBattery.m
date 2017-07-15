@@ -44,7 +44,7 @@
     
     //获取当前电池的电量
     NSInteger level = [[UIDevice currentDevice] batteryLevel] *100;
-    callback(nil,@{@"level":@(level),@"charging":@(charging)});
+    callback(nil,@{@"level":@(level),@"isPlugged":@(charging)});
     
     
 }
